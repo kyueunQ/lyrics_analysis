@@ -10,7 +10,8 @@ install.packages(c("stringr", "hash", "tau", "Sejong", "RSQLite", "devtools"), t
 install.packages("remotes")
 remotes::install_github("haven-jeon/KoNLP",
                         upgrade = "never",
-                        INSTALL_opts = c("--no-multiarch"))
+                        INSTALL_opts = c("--no-multiarch"),
+                        force = T)
 library(KoNLP)
 
 useNIADic()
